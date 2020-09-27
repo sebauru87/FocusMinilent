@@ -5,13 +5,13 @@ from dotenv import load_dotenv
 
 load_dotenv(override=True)
 
-def send_email(author, subject, message):
+def send_email(author, mail, subject, message):
     email = EmailMessage()
     email['from'] = author
     email['to'] = 'ferreirasebastian@gmail.com'
     email['subject'] = subject
 
-    email.set_content(f'{author} says: {message}')
+    email.set_content(f'{author} ({mail}) dice: {message}')
 
     with smtplib.SMTP(host='smtp.gmail.com', port=587) as smtp:
         smtp.ehlo()

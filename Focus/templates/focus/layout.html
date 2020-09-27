@@ -2,106 +2,231 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Optica Focus Minilent" />
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Focus Minilent</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../../static/focus/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../static/focus/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../static/focus/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../static/focus/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../static/focus/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../static/focus/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../static/focus/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../static/focus/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../static/focus/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../../static/focus/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../static/focus/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../static/focus/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../static/focus/icon/favicon-16x16.png">
+    <link rel="manifest" href="../../static/focus/icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>Optica Focus Minilent</title>
+    <link href="../../static/focus/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../../static/focus/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../../static/focus/vendor/icofont/icofont.min.css" rel="stylesheet">
+
+
+
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="../../static/focus/css/style.css" rel="stylesheet">
+
+
 </head>
 
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <img src="../../static/focus/focus.jpeg" style="height: 50px; width: 70px;">
-                <a class="navbar-brand" href="/">Optica</a>
-                <a class="navbar-brand" href="/lentescontacto">Lentes de Contacto</a>
-                <a class="navbar-brand" href="/about">Ofertas</a>
-                <a class="navbar-brand" href="/about">Mas Informacion</a>
-                <a class="navbar-brand" href="/ubicacion">Ubicacion</a>
-                <a class="navbar-brand" href="/lab">Historia</a>
-            </div>
-        </div>
-    </nav>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+    <div class="container d-flex">
+      <div class="contact-info mr-auto">
+        <i class="icofont-envelope"></i> <a href="mailto:focusmini14@gmail.com">focusmini14@gmail.com</a>
+        <i class="icofont-phone"></i> 2900 74 71
+        <i class="icofont-google-map"></i> 18 DE JULIO 1044 of. 105 galeria Diri
+      </div>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="#" class="skype"><i class="icofont-skype"></i></a>
+        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="index.html">Focus Minilent</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'location' %}">About</a></li>
+          <li><a href="{% url 'lentescontacto' %}">Lentes de Contacto</a></li>
+          <li><a href="#departments">Departments</a></li>
+          <li><a href="#doctors">Doctors</a></li>
+          <li class="drop-down"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="drop-down"><a href="#">Deep Drop Down</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+      <h1>Welcome to Medilab</h1>
+      <h2>We are team of talanted designers making websites with Bootstrap</h2>
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+
     {% block body %}
     {% endblock %}
 
-    <!-- Footer -->
 
-    <footer class="page-footer font-small blue pt-4 fixed-bottom">
 
-        <!-- Footer Links -->
-        <div class="container-fluid text-center text-md-left">
+    </main><!-- End #main -->
 
-            <!-- Grid row -->
-            <div class="row">
 
-                <!-- Grid column -->
-                <div class="col-md-6 mt-md-0 mt-3">
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
 
-                    <!-- Content -->
-                    <h5 class="text-uppercase"></h5>
-                    <p>Direccion: 18 DE JULIO 1044 of. 105 galeria Diri - Centro - Montevideo</p>
-                    <p>Telefono: 29007471</p>
-                    <p>Horario de Atencion</p>
-                    <p>Lunes a Viernes de 9:00 a 19:00 Hs.</p>
-                    <p>Email | <focusmini14@gmail class="com">focusmini14@gmail.com</focusmini14@gmail>
-                    </p>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
 
-                </div>
-                <!-- Grid column -->
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>Focus Minilent</h3>
+                        <p>
+                            18 DE JULIO 1044 of. 105 galeria Diri
+                            Montevideo, Uruguay <br><br>
+                            <strong>Horario:</strong> Lunes a Viernes de 9:00 a 19:00 Hs.<br>
+                            <strong>Telefono:</strong> 2900 74 71<br>
+                            <strong>Email:</strong> focusmini14@gmail.com<br>
+                        </p>
+                    </div>
 
-                <hr class="clearfix w-100 d-md-none pb-3">
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'location' %}">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
 
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                        </ul>
+                    </div>
 
-                    <!-- Links -->
-                    <h5 class="text-uppercase">Links</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-
-                    </ul>
-
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
-
-                    <!-- Links -->
-                    <h5 class="text-uppercase">Links</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-
-                    </ul>
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Join Our Newsletter</h4>
+                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+                    </div>
 
                 </div>
-                <!-- Grid column -->
+            </div>
+        </div>
+
+        <div class="container d-md-flex py-4">
+
+            <div class="mr-md-auto text-center text-md-left">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>Focus Minilent 2020</span></strong>. Todos los derechos reservados.
+                </div>
 
             </div>
-            <!-- Grid row -->
-
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
         </div>
-        <!-- Footer Links -->
+    </footer><!-- End Footer -->
 
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href=""> Optica Focus Minilent</a>
-        </div>
-        <!-- Copyright -->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
-    </footer>
-    <!-- Footer -->
+    <!-- Vendor JS Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../../static/focus/js/main.js"></script>
+
 </body>
 
 </html>
