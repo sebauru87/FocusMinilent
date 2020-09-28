@@ -10,8 +10,8 @@ from .myemail import send_email
 def index(request):
     return render(request, 'focus/index.html')
 
-def location(request):
-    return render(request, 'focus/location.html')
+def contact(request):
+    return render(request, 'focus/contact.html')
 
 def lab(request):
     return render(request, 'focus/lab.html')
