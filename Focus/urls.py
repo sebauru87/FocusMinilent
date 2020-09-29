@@ -1,3 +1,4 @@
+from os import name
 from django.urls import path
 from . import views
 
@@ -7,4 +8,5 @@ urlpatterns = [
     path("lab", views.lab, name="lab"),
     path("contact/submit_form", views.submit_form, name="submit_form"),
     path("lentescontacto", views.lentescontacto, name="lentescontacto"),
+    path("submit_newsletter", views.submit_newsletter, name="submit_newsletter"),
 ]

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -179,11 +179,12 @@
                     </div>
 
                     <div class="col-lg-4 col-md-6 footer-newsletter">
-                        <h4>Join Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                        <form action="" method="post">
+                        <h4>&Uacutenete a nuestro Newsletter y Ofertas</h4>
+                        <p>Si quieres recibir nuestro catalogo de ofertas y promociones puedes suscribirte ingresando tu cuenta de mail.</p>
+                        <form action="submit_newsletter" method="post">
                             {% csrf_token %}
-                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                            <input type="email" name="email" required>
+                            <input type="submit" value="Suscrbite">
                         </form>
                     </div>
 

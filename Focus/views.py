@@ -3,6 +3,8 @@ from django.shortcuts import render, redirect
 
 from django.http import HttpResponse
 
+from .models import Emails
+
 import csv
 from .myemail import send_email
 
@@ -37,8 +39,21 @@ def submit_form(request):
             # data = request.form.to_dict()
             data = request.POST
             write_data_to_csv(data)
-            # return redirect('thankyou.html')
-            return HttpResponse("BIEN")
+            message = 'Muchas gracias por escribirnos. Estaremos respondiendo tu mensaje lo mas rapido posible.'
+            return render(request, 'focus/thankyou.html', {'message': message})
+        except:
+            return 'did not save to database'
+    else:
+        return 'something went wrong, try again.'
+
+def submit_newsletter(request):
+    if request.method == 'POST':
+        try:
+            data = request.POST
+            user_email = Emails(email=data['email'])
+            user_email.save()
+            message = 'Muchas gracias por suscribirte a nuestro Newsletter.'
+            return render(request, 'focus/thankyou.html', {'message': message})
         except:
             return 'did not save to database'
     else:
