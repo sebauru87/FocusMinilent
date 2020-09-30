@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>FOCUS Minilent</title>
+    <title>fOCUS Minilent</title>
     <meta name="description" content="Optica Focus Minilent">
     <meta name="title" content="Optica Focus Minilent">
     <meta name="keywords" content="optica, optica focus, optica focus minilent, focus minilent, focus, minilent, 
@@ -82,7 +82,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
         <img src="../../static/focus/img/focus.jpeg" alt="" height="50px"/>
-      <h1 class="logo mr-auto"><a href="index.html">FOCUS Minilent</a></h1>
+      <h1 class="logo mr-auto"><a href="index.html">fOCUS Minilent</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -90,26 +90,14 @@
         <ul>
           <li class="active"><a href="{% url 'index' %}">Home</a></li>
           <li><a href="{% url 'contact' %}">About</a></li>
-          <li><a href="{% url 'lentescontacto' %}">Lentes de Contacto</a></li>
-          <li><a href="#departments">Departments</a></li>
-          <li><a href="#doctors">Doctors</a></li>
-          <li class="drop-down"><a href="">Drop Down</a>
+          <li class="drop-down"><a href="">Lentes de Contacto</a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Deep Drop Down</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Tipos de lentes</a></li>
+              <li><a href="{% url 'lentescontacto' %}">Videos Instructivos</a></li>
             </ul>
           </li>
+          <li><a href="#departments">Departments</a></li>
+          <li><a href="#doctors">Doctors</a></li>
           <li><a href="{% url 'contact' %}">Contacto</a></li>
 
         </ul>
@@ -148,12 +136,12 @@
                 <div class="row">
 
                     <div class="col-lg-3 col-md-6 footer-contact">
-                        <h3>FOCUS Minilent</h3>
+                        <h3>fOCUS Minilent</h3>
                         <p>
                             18 DE JULIO 1044 of. 105 galeria Diri
                             Montevideo, Uruguay <br><br>
                             <strong>Horario:</strong> Lunes a Viernes de 9:00 a 19:00 Hs.<br>
-                            <strong>Telefono:</strong> 2900 74 71<br>
+                            <strong>Tel&eacute;fono:</strong> 2900 74 71<br>
                             <strong>Email:</strong> focusmini14@gmail.com<br>
                         </p>
                     </div>
@@ -164,8 +152,6 @@
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="{% url 'contact' %}">About us</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
                         </ul>
                     </div>
 
@@ -174,19 +160,16 @@
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-4 col-md-6 footer-newsletter">
                         <h4>&Uacutenete a nuestro Newsletter y Ofertas</h4>
-                        <p>Si quieres recibir nuestro catalogo de ofertas y promociones puedes suscribirte ingresando tu cuenta de mail.</p>
+                        <p>Si quieres recibir nuestro cat&aacute;logo de ofertas y promociones puedes suscribirte ingresando tu cuenta de mail.</p>
                         <form action="submit_newsletter" method="post">
                             {% csrf_token %}
                             <input type="email" name="email" required>
-                            <input type="submit" value="Suscrbite">
+                            <input type="submit" value="Suscr&iacute;bete">
                         </form>
                     </div>
 
@@ -198,7 +181,7 @@
 
             <div class="mr-md-auto text-center text-md-left">
                 <div class="copyright">
-                    &copy; Copyright <strong><span>Focus Minilent 2020</span></strong>. Todos los derechos reservados.
+                    &copy; Copyright <strong><span>fOCUS Minilent 2020</span></strong>. Todos los derechos reservados.
                 </div>
 
             </div>
