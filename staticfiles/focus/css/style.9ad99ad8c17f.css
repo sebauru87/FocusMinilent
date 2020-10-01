@@ -447,7 +447,7 @@ body {
   #hero {
     width: 100%;
     height: 100vh;
-    background: url("../../focus/img/cover.jpg") top center;
+    background: url("../../focus/img/cover.0ec9c90b560b.jpg") top center;
     background-size: cover;
     position: relative;
     margin-bottom: -200px;
@@ -722,7 +722,7 @@ body {
   }
   
   .about .video-box {
-    background: url("../img/about.jpg") center center no-repeat;
+    background: url("../img/about.ca4adbd99137.jpg") center center no-repeat;
     background-size: cover;
     min-height: 500px;
   }
