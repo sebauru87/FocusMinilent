@@ -20,3 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('Focus.urls'))
 ]
+
+handler404 = 'Focus.views.handler404'
+handler500 = 'Focus.views.handler500'

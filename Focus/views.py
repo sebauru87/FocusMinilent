@@ -1,5 +1,6 @@
 from django.http import request
 from django.shortcuts import render, redirect
+from django.template import RequestContext
 
 from django.http import HttpResponse
 
@@ -58,3 +59,11 @@ def submit_newsletter(request):
             return 'did not save to database'
     else:
         return 'something went wrong, try again.'
+
+
+def handler404(request, *args, **kwargs):
+    return render(request, 'focus/404.html', status=404)
+
+
+def handler500(request, *args, **kwargs):
+    return render(request, 'focus/500.html', status=500)
